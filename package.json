@@ -1,0 +1,42 @@
+{
+  "name": "refresh",
+  "version": "0.0.1-dev.1",
+  "description": "Refresh Modern Beautiful Electron and NodeJS Browser.",
+  "main": "refresh.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TryUps/Refresh.git"
+  },
+  "keywords": [
+    "Browser",
+    "NodeJS",
+    "Chromium",
+    "Refresh",
+    "Modern",
+    "Electron",
+    "Javascript",
+    "Html5",
+    "CSS3",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "TryUps Inc.",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/TryUps/Refresh/issues"
+  },
+  "homepage": "https://github.com/TryUps/Refresh#readme",
+  "devDependencies": {
+    "electron": "^8.0.0-beta.5",
+    "electron-builder": "^21.2.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "jquery": "^3.4.1",
+    "nedb": "^1.8.0"
+  }
+}
