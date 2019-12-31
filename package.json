@@ -32,7 +32,14 @@
   "homepage": "https://github.com/TryUps/Refresh#readme",
   "devDependencies": {
     "electron": "^8.0.0-beta.5",
-    "electron-builder": "^21.2.0"
+    "electron-builder": "^21.2.0",
+    "electron-reload": "^1.5.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   },
   "dependencies": {
     "axios": "^0.19.0",
