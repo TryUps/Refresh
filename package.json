@@ -4,7 +4,8 @@
   "description": "Refresh Modern Beautiful Electron and NodeJS Browser.",
   "main": "refresh.js",
   "scripts": {
-    "test": "test"
+    "start": "cross-env ENV=dev ELECTRON_IS_DEV=1 ELECTRON_ENABLE_STACK_DUMPING=true electron .",
+    "test": "test/test.js"
   },
   "repository": {
     "type": "git",
@@ -43,7 +44,11 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
+    "cross-env": "^6.0.3",
+    "express": "^4.17.1",
+    "i18n": "^0.8.4",
     "jquery": "^3.4.1",
-    "nedb": "^1.8.0"
+    "nedb": "^1.8.0",
+    "open": "^7.0.0"
   }
 }

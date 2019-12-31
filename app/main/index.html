@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../theme/style.css">
 </head>
 <body>
-    
+    <header>
+        <address><input type="text" name="refresh-address-bar" id="refresh-address-bar" placeholder="Discover new world..."></address>
+    </header>
+    <main>
+        <section class="refresh-webview-loader" id="refresh-webview-loader">
+            <webview 
+                class="ref-webview webload js-webview jsweb-content"
+                id="refresh-webview"
+                src="https://www.github.com/"
+                useragent="Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko">
+                Oh No! Error is comming...
+            </webview>
+        </section>
+    </main>
+    <div class="refresh-scripts" id="refresh-scripts">
+        <script src="../scripts/browser.js"></script>
+    </div>
 </body>
 </html>
