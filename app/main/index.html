@@ -4,25 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="../theme/style.css">
+    <title>Refresh Modern Browser</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="../resources/css/reset.css">
+    <link rel="stylesheet" href="../resources/css/global.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
 </head>
 <body>
-    <header>
-        <address><input type="text" name="refresh-address-bar" id="refresh-address-bar" placeholder="Discover new world..."></address>
-    </header>
     <main>
-        <section class="refresh-webview-loader" id="refresh-webview-loader">
-            <webview 
-                class="ref-webview webload js-webview jsweb-content"
+        <section class="web-content">
+            <webview
                 id="refresh-webview"
-                src="https://www.github.com/"
-                useragent="Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko">
-                Oh No! Error is comming...
+                class="refresh-webview ref-webview"
+                preload='../preload/preload_all.js'
+                src="https://www.bing.com.br"
+                disablewebsecurity
+                plugins>
+                <span class="webview-error">"WebView not working..."</span>
             </webview>
         </section>
+        <footer id="refresh-footer-bar">
+            <address id="refresh-address">
+                <button class="refresh-btn-bar"><</button>
+                <input
+                    type="search"
+                    value=""
+                    placeholder="Discover a new world..."
+                    id="refresh-addressbar"
+                    class="refresh-addressbar"
+                    name="refresh-addressbar" />
+            </address>
+        </footer>
     </main>
-    <div class="refresh-scripts" id="refresh-scripts">
+    <div class="refresh-scripts">
         <script src="../scripts/browser.js"></script>
     </div>
 </body>

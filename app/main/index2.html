@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Refresh Modern Browser</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="../theme/style.css">
+</head>
+<body>
+    <header>
+        <address><input type="text" name="refresh-addressbar" id="refresh-addressbar" placeholder="Discover new world..."></address>
+    </header>
+    <main>
+        <section class="refresh-webview-loader" id="refresh-webview-loader">
+            <webview
+                class="ref-webview webload js-webview jsweb-content"
+                id="refresh-webview"
+                disablewebsecurity
+                plugins
+                preload='preload.js'
+                src="https://www.google.com.br">
+                <span> Oh No! Error is comming... </span>
+            </webview>
+        </section>
+    </main>
+    <div class="refresh-scripts" id="refresh-scripts">
+        <script src="../scripts/browser.js"></script>
+        <script>if (typeof module === 'object') {window.module = module; module = undefined};</script>
+        <script>if (window.module) module = window.module;</script>
+    </div>
+</body>
+</html>
