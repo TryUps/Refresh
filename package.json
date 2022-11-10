@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/TryUps/Refresh#readme",
   "devDependencies": {
-    "electron": "^8.0.0-beta.5",
+    "electron": "^18.3.7",
     "electron-builder": "^21.2.0",
     "electron-reload": "^1.5.0",
     "eslint": "^6.8.0",
